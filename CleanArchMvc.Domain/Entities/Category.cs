@@ -6,10 +6,9 @@ using CleanArchMvc.Domain.Validation; // importar o validation
 
 namespace CleanArchMvc.Domain.Entities
 {
-    public sealed class Category //sealed faz com que a classe não possa ser herdada
+    public sealed class Category : EntityBase //sealed faz com que a classe não possa ser herdada
     {
         // todos os sets são private, o que garante que os objetos do modelo de dominio não possam ter seus valores alterados ou atribuidos externamentes 
-        public int Id { get; private set; }
         public string Name { get; private set; }
 
         // para permitir a criação de objetos se é criado um construtor parametrizado
@@ -31,7 +30,7 @@ namespace CleanArchMvc.Domain.Entities
 
         // incluir comportamentos de validação no modelo de domínio
 
-        public void Update (string name) 
+        public void Update(string name)
         {
             ValidateDomain(name);
         }
