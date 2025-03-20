@@ -31,6 +31,11 @@ namespace CleanArchMvc.Domain.Entities
 
         // incluir comportamentos de validação no modelo de domínio
 
+        public void Update (string name) 
+        {
+            ValidateDomain(name);
+        }
+
         private void ValidateDomain(string name)
         {
             DomainExceptionValidation.When(string.IsNullOrEmpty(name), "Invalid name. Name is required"); // regras de validação
