@@ -8,20 +8,20 @@ namespace CleanArchMvc.Domain.Entities
 {
     public class Product : EntityBase
     {
-     
-        public string Name { get; private set; }
-        public string Description { get; private set; }
-        public decimal Price { get; private set; }
-        public int Stock { get; private set; }
-        public string Image { get; private set; }
 
-        public Product(int id, string name, string description, decimal price, int stock, string image)
+        public string? Name { get; private set; }
+        public string? Description { get; private set; }
+        public decimal? Price { get; private set; }
+        public int? Stock { get; private set; }
+        public string? Image { get; private set; }
+
+        public Product(string name, string description, decimal price, int stock, string image)
         {
             ValidateDomain(name, description, price, stock, image);
         }
 
 
-        public Product(int id, string name, string description, decimal price, int stock,)
+        public Product(int id, string name, string description, decimal price, int stock, string image)
         {
             DomainExceptionValidation.When(id < 0, "Invalid id value");
             Id = id;
@@ -29,7 +29,7 @@ namespace CleanArchMvc.Domain.Entities
         }
 
 
-        public void Update(string name, string, description, decimal price, int stock, string image, int CategoryId)
+        public void Update(string name, string description, decimal price, int stock, string image, int CategoryId)
         {
             ValidateDomain(name, description, price, stock, image);
         }
@@ -37,7 +37,7 @@ namespace CleanArchMvc.Domain.Entities
 
         private void ValidateDomain(string name, string description, decimal price, int stock, string image)
         {
-            DomainExceptionValidation.When(id < 0, "Invalid id");
+
             DomainExceptionValidation.When(stock < 0, "Stock invalid, minimum value needed is 0");
             DomainExceptionValidation.When(price < 0, "Price invalid, minimum value needed is 0");
             DomainExceptionValidation.When(name.Length < 3, "Invalid name, to short ");
@@ -53,8 +53,8 @@ namespace CleanArchMvc.Domain.Entities
             Image = image;
         }
 
-        public int CategoryId { get; set; }  // chave estrangeira relacionada a Category
-        public Category Category { get; set; }
+        public int? CategoryId { get; set; }  // chave estrangeira relacionada a Category
+        public Category? Category { get; set; }
 
 
     }
