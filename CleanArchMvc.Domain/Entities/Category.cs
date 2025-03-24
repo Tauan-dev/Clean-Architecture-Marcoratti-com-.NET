@@ -29,7 +29,7 @@ namespace CleanArchMvc.Domain.Entities
 
         //a partir de agora quem for criar um objeto do tipo Category, precisará fornecer os valores do name ou do id e name
 
-        ICollection<Product> Products { get; set; } = new List<Product>(); // a coleção de produtos é privada, e só pode ser acessada por métodos da classe
+        public ICollection<Product> Products { get; set; } = new List<Product>(); // a coleção de produtos é privada, e só pode ser acessada por métodos da classe
 
         // incluir comportamentos de validação no modelo de domínio
 
