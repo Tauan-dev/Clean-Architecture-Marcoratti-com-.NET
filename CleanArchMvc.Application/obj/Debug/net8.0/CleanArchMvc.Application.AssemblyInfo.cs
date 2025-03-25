@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CleanArchMvc.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a2c291be11af8599d3b022b0061c0ab512c53fb8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+29208876c3fe3ec3cf361679145817e525e221b8")]
 [assembly: System.Reflection.AssemblyProductAttribute("CleanArchMvc.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CleanArchMvc.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
