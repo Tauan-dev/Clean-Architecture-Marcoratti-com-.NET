@@ -9,6 +9,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
+
+
 namespace CleanArchMvc.Infra.IoC
 {
     public static class DependencyInjection // os recursos usados no projeto são definidos nessa classe
