@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "6uEXLGYjICA=",
+  "dgSpecHash": "tYZcqZn8Krw=",
   "success": true,
   "projectFilePath": "C:\\Users\\Tauan Neres\\Documents\\Projetos\\Cursos\\Clean Architecture Marcoratti com .NET\\CleanArchMvc.Infra.IoC\\CleanArchMvc.Infra.Ioc.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Tauan Neres\\.nuget\\packages\\automapper\\14.0.0\\automapper.14.0.0.nupkg.sha512",
     "C:\\Users\\Tauan Neres\\.nuget\\packages\\bouncycastle.cryptography\\2.3.1\\bouncycastle.cryptography.2.3.1.nupkg.sha512",
     "C:\\Users\\Tauan Neres\\.nuget\\packages\\google.protobuf\\3.26.1\\google.protobuf.3.26.1.nupkg.sha512",
     "C:\\Users\\Tauan Neres\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
